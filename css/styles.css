@@ -135,6 +135,10 @@ body {
 
 /*auth-nav*/
 
+.btn-icon {
+  margin-right: 10px;
+}
+
 .auth-nav {
   display: flex;
   margin-left: auto;
@@ -226,6 +230,15 @@ body {
 }
 
 /*Section 2*/
+
+.benefits-icon {
+  display: block;
+  content: "";
+
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
 
 .section {
   margin-top: 94px;
@@ -345,6 +358,27 @@ body {
   letter-spacing: 0.03em;
 }
 
+/*Section 3*/
+
+.section-clients {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.heading.all {
+  margin-top: 94px;
+}
+
+.list.all {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+
 /*section portfolio*/
 
 .filter .button {
@@ -414,16 +448,6 @@ body {
   line-height: 1.9;
 
   letter-spacing: 0.03em;
-}
-
-/*Section 3*/
-
-.heading.all {
-  margin-top: 94px;
-}
-
-.list.all {
-  display: inline-block;
 }
 
 /* Footer*/

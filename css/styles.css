@@ -115,7 +115,7 @@ body {
   margin-left: 93px;
 }
 
-.site-nav li:not(:last-child) {
+.site-nav .nav-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -144,7 +144,7 @@ body {
   margin-left: auto;
 }
 
-.auth-nav li:not(:last-child) {
+.auth-nav .nav-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -173,12 +173,15 @@ body {
   background-color: #c4c4c4;
 }
 
+/*Overlay*/
+
 .overlay {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4));
+  background-image: url(../images/Img-header.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4));
-  background-image: url(../images/Img-header.jpg);
+  background-color: #c4c4c4;
 }
 
 .hero .subject {
@@ -230,15 +233,6 @@ body {
 }
 
 /*Section 2*/
-
-.benefits-icon {
-  display: block;
-  content: "";
-
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
 
 .section {
   margin-top: 94px;
@@ -359,6 +353,12 @@ body {
 }
 
 /*Section 3*/
+
+.clients-all {
+  box-sizing: border-box;
+  width: 170px;
+  height: 92px;
+}
 
 .section-clients {
   max-width: 1600px;

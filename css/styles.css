@@ -149,12 +149,20 @@ body {
 }
 
 .auth-nav .link {
+  display: flex;
+  align-items: center;
+
   color: #757575;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.auth-nav .btn-icon:hover,
+.auth-nav .btn-icon:focus {
+  color: #2196f3;
 }
 
 .auth-nav .link:hover,
@@ -176,8 +184,9 @@ body {
 /*Overlay*/
 
 .overlay {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4));
-  background-image: url(../images/Img-header.jpg);
+  background-image: linear-gradient
+      (rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Img-header.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -220,6 +229,7 @@ body {
 
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 .hero .button {
@@ -241,6 +251,17 @@ body {
 
 .benefits {
   padding-bottom: 0;
+}
+
+.benefits-wrap {
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .list .picture:nth-child(3n) {
@@ -316,7 +337,7 @@ body {
 }
 
 .list .team-subtitle {
-  margin-top: 30px;
+  padding: 30px 0;
   text-align: center;
 }
 

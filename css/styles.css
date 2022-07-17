@@ -52,7 +52,7 @@ address {
 body {
   color: var(--primary-text-color);
 
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
 }
 
@@ -68,7 +68,7 @@ body {
 .logo {
   color: #212121;
 
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -179,11 +179,7 @@ body {
 /*Overlay*/
 
 .overlay {
-  background-image: linear-gradient(
-      to top,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/imgheader.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -594,4 +590,33 @@ body {
   text-transform: uppercase;
 
   color: #ffffff;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+}
+
+.footer-item {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+}
+
+.footer-icons {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.footer-icons:hover,
+.footer_icons:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }

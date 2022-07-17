@@ -136,7 +136,7 @@ body {
 /*auth-nav*/
 
 .btn-icon {
-  fill: #757575;
+  fill: currentColor;
   margin-right: 10px;
 }
 
@@ -166,11 +166,6 @@ body {
   color: #2196f3;
 }
 
-.btn-icon:hover,
-.btn-icon:focus {
-  fill: #2196f3;
-}
-
 /*Герой*/
 
 .hero {
@@ -184,8 +179,11 @@ body {
 /*Overlay*/
 
 .overlay {
-  background-image: linear-gradient
-      (rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(
+      to top,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../images/imgheader.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -242,7 +240,7 @@ body {
   border-radius: 4px;
 }
 
-/*Section 2*/
+/*Section Benefits*/
 
 .section {
   margin-top: 94px;
@@ -256,7 +254,6 @@ body {
 .benefits-wrap {
   display: flex;
   height: 120px;
-  width: 100%;
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -283,6 +280,10 @@ body {
 
 .list .benefits-item:nth-child(4n) {
   padding-right: 0;
+}
+
+.benefits-item {
+  width: 270px;
 }
 
 /*Section Team*/
@@ -380,22 +381,33 @@ body {
 
 .team-links {
   display: flex;
+  justify-content: center;
   list-style: none;
   gap: 10px;
-  padding-left: 32px;
+  padding: 0;
 }
 
 .link-team {
-  cursor: pointer;
+  fill: currentColor;
 }
 
-.link-team:hover,
-.link-team:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+.social-link {
+  color: #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 
-/*Section 3*/
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+/*Section Clients*/
 
 .section-clients {
   max-width: 1600px;
@@ -409,9 +421,12 @@ body {
 }
 
 .clients-all {
-  box-sizing: border-box;
-  max-width: 170px;
-  max-height: 92px;
+  color: #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -425,13 +440,13 @@ body {
 }
 
 .clients-icon {
-  fill: #afb1b8;
-  margin: 16px 32px;
+  fill: currentColor;
 }
 
-.clients-icon:hover,
-.clients-icon:focus {
-  fill: #2196f3;
+.clients-all:hover,
+.clients-all:focus {
+  color: #2196f3;
+  border-color: #2196f3;
 }
 
 /*section portfolio*/
@@ -556,6 +571,15 @@ body {
 
 .footer-link:nth-child(2n) {
   margin-bottom: 0;
+}
+
+.page-footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.address-wrapper {
+  margin-right: 70px;
 }
 
 .page-footer .container {

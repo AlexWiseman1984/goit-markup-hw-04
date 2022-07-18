@@ -526,7 +526,7 @@ body {
 
 .filter .active {
   background-color: var(--accent-color);
-  accent-color: var(--primary-white-color);
+  color: var(--primary-white-color);
 }
 
 /* Footer*/
@@ -631,7 +631,7 @@ body {
 }
 
 .footer-icons:hover,
-.footer_icons:focus {
+.footer-icons:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }

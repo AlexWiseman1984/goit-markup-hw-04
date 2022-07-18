@@ -239,8 +239,8 @@ body {
 /*Section Benefits*/
 
 .section {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .benefits {
@@ -412,10 +412,6 @@ body {
   justify-content: center;
 }
 
-.heading.all {
-  margin-top: 94px;
-}
-
 .clients-all {
   color: #afb1b8;
   display: flex;
@@ -432,7 +428,6 @@ body {
   justify-content: center;
   gap: 30px;
   margin-top: 50px;
-  margin-bottom: 94px;
 }
 
 .clients-icon {
@@ -489,7 +484,12 @@ body {
   gap: 30px;
 }
 
-.portfolio-items:hover {
+.portfolio-items {
+  display: block;
+}
+
+.portfolio-items:hover,
+.portfolio-items:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -522,6 +522,11 @@ body {
   line-height: 1.9;
 
   letter-spacing: 0.03em;
+}
+
+.filter .active {
+  background-color: var(--accent-color);
+  accent-color: var(--primary-white-color);
 }
 
 /* Footer*/
@@ -569,6 +574,15 @@ body {
   margin-bottom: 0;
 }
 
+.footer-link .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link .link:hover,
+.footer-link .link:focus {
+  color: #2196f3;
+}
+
 .page-footer .container {
   display: flex;
   align-items: baseline;
@@ -602,6 +616,7 @@ body {
   list-style: none;
   gap: 10px;
   padding: 0;
+  margin: 0;
 }
 
 .footer-icons {
